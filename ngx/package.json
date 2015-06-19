@@ -1,0 +1,46 @@
+{
+  "name": "my-ngx-app",
+  "version": "0.1.0",
+  "description": "My Angular Express application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "karma start"
+  },
+  "keywords": [
+    "angular-express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "dependencies": {
+    "config": "^1.14.0",
+    "express": "^4.12.4",
+    "harp": "^0.17.0",
+    "morgan": "^1.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "karma": "^0.12.36",
+    "karma-babel-preprocessor": "^5.2.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jspm": "^1.1.5",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17"
+  }
+}
