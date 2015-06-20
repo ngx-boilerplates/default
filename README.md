@@ -6,6 +6,7 @@ Features:
 
 - automatic compilation of ES6 with [Babel](https://babeljs.io/)
 - pre-configured package management using [jspm](http://jspm.io/)
+- dynamic module loading using the [SystemJS dynamic ES6 loader](https://github.com/systemjs/systemjs)
 - pre-configured unit testing with [karma](http://karma-runner.github.io/), [mocha](http://mochajs.org/), [chai](http://chaijs.com/) and [PhantomJS](http://phantomjs.org/)
 - powerful development server based on [Express 4](http://expressjs.com/) and [Harp](http://harpjs.com/) with preprocessor support for [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/), [EJS](http://www.embeddedjs.com/), [Coffeescript](http://coffeescript.org/), [Sass](http://sass-lang.com/), [LESS](http://lesscss.org/) and [Stylus](https://learnboost.github.io/stylus/).
 
