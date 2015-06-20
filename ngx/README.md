@@ -1,9 +1,6 @@
-# Angular Express
+# Welcome
 
-Component driven [Angular](https://angularjs.org/) web application boilerplate using [jspm](http://jspm.io/), [karma](http://karma-runner.github.io/), [mocha](http://mochajs.org/), [chai](http://chaijs.com/):
-
-- promotes component driven development
-- includes powerful development server based on [Express 4](http://expressjs.com/) and [Harp](http://harpjs.com/) for ultimate developer comfort
+Welcome to this [Angular Express](https://github.com/angular-express/angular-express) web application.
 
 ## How to get started
 
@@ -41,10 +38,12 @@ It can be overriden and extended using the [node-config](https://github.com/lore
 
 See [configuration files](https://github.com/lorenwest/node-config/wiki/Configuration-Files) for more information.
 
-### v0.2.0
+## Development
 
-- Added configuration support
+For more details about the technical details, check out the [Angular Express boilerlate documentation](https://github.com/ngx-boilerplates/default).
+
+## Change log
 
 ### v0.1.0
 
-- Added modular structure
+- Initial version
