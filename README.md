@@ -11,7 +11,7 @@ Features:
 
 ## How to get started
 
-Make sure you have the [Angular Express CLI tool](https://github.com/angular-express/ngx-cli) installed:
+Ensure the [Angular Express CLI tool](https://github.com/angular-express/ngx-cli) is installed:
 
 ```bash
 $ npm install -g ngx-cli
@@ -43,7 +43,7 @@ Finally start the Angular Express server:
 $ node index.js
 ```
 
-and navigate to: `<ip>:9000` in your browser.
+and navigate to: `<ip>:9000` in the browser.
 
 ## How the configuration works
 
@@ -147,7 +147,7 @@ $ ngx install component-name
 
 See [the Angular Express component directory](https://github.com/ngx-components) for a list of ready-to-use components.
 
-To install custom components directly from a GitHub account:
+To install custom components directly from a GitHub repository:
 
 ```bash
 $ ngx install github-username/github-repository-name
