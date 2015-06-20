@@ -5,7 +5,7 @@
 .DS_Store
 
 # Ignore jspm stuff
-jspm_packages
+_jspm_packages
 
 # Ignore node stuff
 node_modules/
