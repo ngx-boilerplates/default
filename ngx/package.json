@@ -1,16 +1,18 @@
 {
-  "name": "my-ngx-app",
+  "name": "ngx-app",
   "version": "0.1.0",
-  "description": "My Angular Express application",
+  "description": "Angular Express web application",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "karma start"
   },
   "keywords": [
-    "angular-express"
+    "angular-express",
+    "ngx",
+    "ngx-app"
   ],
-  "author": "",
+  "author": "Angular Express",
   "license": "MIT",
   "jspm": {
     "directories": {
