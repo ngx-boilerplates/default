@@ -10,6 +10,8 @@ Features:
 - pre-configured unit testing with [karma](http://karma-runner.github.io/), [mocha](http://mochajs.org/), [chai](http://chaijs.com/) and [PhantomJS](http://phantomjs.org/)
 - powerful development server based on [Express 4](http://expressjs.com/) and [Harp](http://harpjs.com/) with preprocessor support for [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/), [EJS](http://www.embeddedjs.com/), [Coffeescript](http://coffeescript.org/), [Sass](http://sass-lang.com/), [LESS](http://lesscss.org/) and [Stylus](https://learnboost.github.io/stylus/).
 
+![ngx-boilerplate-default](https://cloud.githubusercontent.com/assets/1859381/8266835/c7d8ead8-1743-11e5-8a7c-cab17753afa7.png)
+
 ## How to get started
 
 Ensure the [Angular Express CLI tool](https://github.com/angular-express/ngx-cli) is installed:
@@ -45,6 +47,7 @@ $ node index.js
 ```
 
 and navigate to: `<ip>:9000` in the browser.
+
 
 ## How the configuration works
 
