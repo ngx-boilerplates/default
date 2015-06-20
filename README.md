@@ -80,7 +80,7 @@ $ karma start
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 ## Change log
 
