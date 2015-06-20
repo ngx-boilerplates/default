@@ -64,6 +64,61 @@ It can be overriden and extended using the [node-config](https://github.com/lore
 
 See [configuration files](https://github.com/lorenwest/node-config/wiki/Configuration-Files) for more information.
 
+## How the Angular side works
+
+The main JavaScript entry point for the Angular application is `src/app.js`:
+
+```javascript
+import angular from "angular";
+import c1 from 'components/sample-component/_build/index';
+
+/**************************************************************************
+ * Define Angular application
+ *************************************************************************/
+
+var ngModule = angular.module('app', []);
+
+/**************************************************************************
+ * Initialize components and pass component specific options
+ *************************************************************************/
+
+c1(ngModule, {baseUrl: '/components/sample-component'});
+```
+
+It uses ES6 syntax and promotes a component driven structure where each component is imported separately.
+
+Components are then passed the Angular module and component specific options so they can dynamically configure themselves and attach them to the main Angular module.
+
+The main markup entry point is `src/index.jade`. It dynamically loads `app.js` like this:
+
+```javascript
+//- Load jspm loader and configuration
+script(src="jspm_packages/system.js")
+script(src="config.js")
+
+//- Try to load bundle if running in production
+if environment === "production"
+    script(src="build.js")
+
+//- Bootstrap the application
+script.
+    System.import('app');
+```
+
+and dependencies are loaded on demand.
+
+In production mode, it tries to load `src/build.js` to pre-load dependencies.
+
+To generate the `src/build.js`, run:
+
+```bash
+$ jspm bundle app --minify
+```
+
+from the root of the project.
+
+
+
 ## How to run unit tests
 
 Make sure the Karma CLI is installed:
