@@ -117,7 +117,43 @@ $ jspm bundle app --minify
 
 from the root of the project.
 
+## How to add components
 
+Components are modules that contain their own:
+
+- templates
+- styles
+- scripts
+- assets
+- unit tests
+
+They are added to the `src/components` directory and imported in `src/app.js`.
+
+#### Use underscores
+
+If you want to include files that are not publicly accessible in production mode, prefix them with an `_`.
+
+A good approach is to include a `_build` directory in your component to include files that you want to be available during development or build phase, but not during production.
+
+See the [included sample component](src/components/sample-component) for an example.
+
+#### Adding existing components
+
+You can install existing components to your application using `ngx install`:
+
+```bash
+$ ngx install component-name
+```
+
+See [the Angular Express component directory](https://github.com/ngx-components) for a list of ready-to-use components.
+
+You can also build and install your own custom components directly from your GitHub account:
+
+```bash
+$ ngx install github-username/github-repository-name
+```
+
+See the [Angular Express CLI documentation](https://github.com/angular-express/ngx-cli) for more information.
 
 ## How to run unit tests
 
