@@ -170,6 +170,30 @@ $ ./bin/compile.js
 
 to compile static HTML, CSS and JavaScript in `dist`.
 
+## How to use livereload during development
+
+Ensure you have [BrowserSync](http://www.browsersync.io/) installed:
+
+```bash
+$ npm install -g browser-sync
+```
+
+From the root of the project, run:
+
+```bash
+$ browser-sync start --proxy localhost:9000 --files "src/**/*"
+```
+
+and navigate your browser to the BrowserSync url:
+
+```bash
+ --------------------------------------
+       Local: http://localhost:3000
+ --------------------------------------
+          UI: http://localhost:3001
+ --------------------------------------
+```
+
 ## How to run unit tests
 
 Make sure the Karma CLI is installed:
