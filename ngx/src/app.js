@@ -1,4 +1,4 @@
-import angular from "angular";
+import angular from 'angular';
 import c1 from 'components/sample-component/_build/index';
 
 /**************************************************************************
