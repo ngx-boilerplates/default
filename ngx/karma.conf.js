@@ -31,7 +31,10 @@ module.exports = function(config) {
       // Make sure all files can be served
       serveFiles: [
         '**/*.*'
-      ]
+      ],
+
+      // Configure package location
+      packages: '_jspm_packages'
     },
 
     // list of files / patterns to load in the browser
