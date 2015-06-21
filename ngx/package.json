@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "karma start"
+    "test": "karma start",
+    "compile": "node ./bin/compile.js",
+    "build": "jspm bundle-sfx app --minify",
+    "development-server": "NODE_ENV=development node index.js",
+    "production-server": "NODE_ENV=production node index.js"
   },
   "keywords": [
     "angular-express",

@@ -44,7 +44,7 @@ $ npm install
 Finally start the Angular Express server:
 
 ```bash
-$ node index.js
+$ npm start
 ```
 
 and navigate to: `<ip>:9000` in the browser.
@@ -97,27 +97,31 @@ Components are then passed the Angular module and component specific options so 
 The main markup entry point is `src/index.jade`. It dynamically loads `app.js` like this:
 
 ```javascript
+//- Non production environment
 //- Load jspm loader and configuration
-script(src="jspm_packages/system.js")
-script(src="config.js")
+if environment !== "production"
+    script(src="_jspm_packages/system.js")
+    script(src="config.js")
+    //- Bootstrap the application
+    script.
+        System.import('app');
 
-//- Try to load bundle if running in production
+//- Production environment
+//- Load self executing bundle
 if environment === "production"
     script(src="build.js")
-
-//- Bootstrap the application
-script.
-    System.import('app');
 ```
 
 and dependencies are loaded on demand.
 
-In production mode, it tries to load `src/build.js` to pre-load dependencies.
+![component-driven-angular-development-with-angular-express](https://cloud.githubusercontent.com/assets/1859381/8271237/dbcf1462-180c-11e5-8994-d2166a27372d.png)
+
+In production mode, it loads the minified `src/build.js` to pre-load dependencies.
 
 To generate the `src/build.js`, run:
 
 ```bash
-$ jspm bundle app --minify
+$ npm run build
 ```
 
 from the root of the project.
@@ -160,12 +164,39 @@ $ ngx install github-username/github-repository-name
 
 See the [Angular Express CLI documentation](https://github.com/angular-express/ngx-cli) for more information.
 
+## How to start the server
+
+Start the server:
+
+```bash
+# Uses NODE_ENV of your environment
+$ npm start
+```
+
+Start the server in development mode:
+
+```bash
+# Uses NODE_ENV=development
+$ npm run development-server
+```
+
+Start the server in production mode:
+
+```bash
+# Update src/build.js
+$ npm run build
+
+# Start production server
+# Uses NODE_ENV=production
+$ npm run production-server
+```
+
 ## How to compile to a static application
 
 From the root of the project, run:
 
 ```bash
-$ ./bin/compile.js
+$ npm run compile
 ```
 
 to compile static HTML, CSS and JavaScript in `dist`.
