@@ -12,17 +12,19 @@ html(ng-app="app")
         base(href="/")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
+        //- Non production environment
         //- Load jspm loader and configuration
-        script(src="_jspm_packages/system.js")
-        script(src="config.js")
+        if environment !== "production"
+            script(src="_jspm_packages/system.js")
+            script(src="config.js")
+            //- Bootstrap the application
+            script.
+                System.import('app');
 
-        //- Try to load bundle if running in production
+        //- Production environment
+        //- Load self executing bundle
         if environment === "production"
             script(src="build.js")
-
-        //- Bootstrap the application
-        script.
-            System.import('app');
 
     body
         h1 Woohoo!
