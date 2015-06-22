@@ -19,6 +19,8 @@ $ node index.js
 
 then navigate to: `<ip>:9000` in your browser.
 
+![ngx-boilerplate-default-running](https://cloud.githubusercontent.com/assets/1859381/8289575/936cdad0-191d-11e5-934a-08fc095054ac.png)
+
 ## Configuring the server
 
 The configuration is stored in configuration files in the `/config` directory.
