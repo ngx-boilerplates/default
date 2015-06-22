@@ -11,8 +11,6 @@ Features:
 - powerful built-in server based on [Express 4](http://expressjs.com/) and [Harp](http://harpjs.com/) with preprocessor support for [Jade](http://jade-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/), [EJS](http://www.embeddedjs.com/), [Coffeescript](http://coffeescript.org/), [Sass](http://sass-lang.com/), [LESS](http://lesscss.org/) and [Stylus](https://learnboost.github.io/stylus/).
 - compile to HTML, CSS & JavaScript and host it anywhere
 
-![ngx-boilerplate-default](https://cloud.githubusercontent.com/assets/1859381/8266835/c7d8ead8-1743-11e5-8a7c-cab17753afa7.png)
-
 ## How to get started
 
 Ensure the [Angular Express CLI tool](https://github.com/angular-express/ngx-cli) is installed:
@@ -33,6 +31,8 @@ Initialize the boilerplate:
 ```bash
 $ ngx init
 ```
+
+![ngx-boilerplate-default](https://cloud.githubusercontent.com/assets/1859381/8266835/c7d8ead8-1743-11e5-8a7c-cab17753afa7.png)
 
 Install third-party dependencies:
 
