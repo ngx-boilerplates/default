@@ -1,5 +1,5 @@
 import angular from 'angular';
-import c1 from 'components/sample-component/_build/index';
+import infoComponent from 'components/info/_build/index';
 
 /**************************************************************************
  * Define Angular application
@@ -15,7 +15,7 @@ ngModule.run(function () {
  * Initialize components and pass component specific options
  *************************************************************************/
 
-c1(ngModule, {baseUrl: '/components/sample-component'});
+infoComponent(ngModule, { baseUrl: '/components/info' });
 
 /**************************************************************************
  * Guidelines
