@@ -34,16 +34,33 @@ html(ng-app="app")
             h1 Angular Express
             h2 Component driven Angular development
 
-        p Welcome to your Angular Express application!
+        main
 
-        ngx-info.ng-cloak(ng-show="true")
+            p Welcome to your Angular Express application!
 
-        pre(ng-hide="true").
-            Bootstrapping application, please wait...
-            (If this message does not go away, something went wrong, check the console...)
+            ngx-info.ng-cloak(ng-show="true")
 
-        h3 What's next?
+            pre(ng-hide="true").
+                Bootstrapping application, please wait...
+                (If this message does not go away, something went wrong, check the console...)
 
-        ul
-            li
-                a(href="https://github.com/ngx-boilerplates/default", target="_blank") Learn more about this boilerplate
+            h3 What's next?
+
+            ul.links
+                li: a(href="https://github.com/ngx-components", target="_blank") Discover Angular Express components to add to your project
+                li: a(href="https://github.com/ngx-boilerplates/default", target="_blank") Learn how to use this Angular 1.x web application boilerplate
+
+
+        footer
+
+            ul.links
+                li: a(href="https://github.com/ngx-boilerplates/default", target="_blank") GitHub
+                li: a(href="https://github.com/ngx-boilerplates/default/issues", target="_blank") Report an issue
+
+            a(href="http://www.angular-express.com", target="_blank") Angular Express
+            = ' '
+            | is written and maintained by
+            = ' '
+            a(href="https://twitter.com/jvandemo", target="_blank") @jvandemo
+
+

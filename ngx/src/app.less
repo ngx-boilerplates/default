@@ -1,3 +1,24 @@
+/**************************************************************************
+ * This is the main stylesheet referenced from index.jade
+ *
+ * This LESS file is automatically compiled to a CSS file.
+ *
+ * Use @import to import component specific styles or includes, for example:
+ * @import "components/_less/variables.less";
+ * @import "components/some-component/_build/styles.less";
+ *
+ * Delete this file and use app.scss or app.css if you prefer
+ * SCSS or plain CSS.
+ *
+ * When using LESS or SCSS, the resulting CSS is automatically
+ * minified and autprefixed.
+ *************************************************************************/
+
+/**************************************************************************
+ * Sample styles for index.jade, feel free to delete everything below
+ * this line and add your own styles...
+ *************************************************************************/
+
 html, body{
   font-size: 100%;
 }
@@ -11,11 +32,15 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #0f97f9;
 }
 
 pre{
   margin: 30px 0;
+}
+
+ngx-info{
+  color: #1eaf68;
 }
 
 h1{
@@ -35,4 +60,34 @@ header{
     margin: 0;
   }
   margin-bottom: 2em;
+}
+
+h3{
+  margin-top: 2em;
+}
+
+ul.links{
+  li{
+    margin: 0 0 0.5em 0;
+  }
+}
+
+footer{
+  margin-top: 40px;
+  font-size: 0.85em;
+  ul.links{
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      margin: 0 0 0 2em;
+      padding: 0;
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+  a{
+    color: #555555;
+  }
 }
