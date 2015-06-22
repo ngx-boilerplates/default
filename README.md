@@ -49,6 +49,7 @@ $ npm start
 
 and navigate to: `<ip>:9000` in the browser.
 
+![ngx-boilerplate-default-running](https://cloud.githubusercontent.com/assets/1859381/8289575/936cdad0-191d-11e5-934a-08fc095054ac.png)
 
 ## How the configuration works
 
