@@ -20,6 +20,7 @@ module.exports = function(config) {
 
         // Main app
         'app.js',
+        '_karma-before-each.js',
 
         // Spec files in app directory
         '*.spec.js',
