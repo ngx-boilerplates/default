@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to this [Angular Express](https://github.com/angular-express/angular-express) web application.
+Welcome to this [Angular Express](http://www.angular-express.com) web application.
 
 ## How to get started
 
