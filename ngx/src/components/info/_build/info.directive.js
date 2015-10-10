@@ -20,7 +20,7 @@ export default function(ngModule, config){
 
   createDirectiveDefinitionObject.$inject = [];
 
-};
+}
 
 
 

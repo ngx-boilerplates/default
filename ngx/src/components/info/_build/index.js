@@ -6,4 +6,4 @@ import infoDirective from './info.directive';
 export default function(ngModule, options){
   angular.merge(config, options);
   infoDirective(ngModule, config);
-};
+}
