@@ -8,10 +8,14 @@
     "test": "karma start",
     "compile": "node ./bin/compile.js",
     "build": "jspm bundle-sfx app --minify",
+    "eslint": "eslint ./src",
     "development-server": "NODE_ENV=development node index.js",
-    "production-server": "NODE_ENV=production node index.js"
+    "production-server": "NODE_ENV=production node index.js",
+    "browser-sync": "node browser-sync.js"
   },
   "keywords": [
+    "angular",
+    "express",
     "angular-express",
     "ngx",
     "ngx-app"
